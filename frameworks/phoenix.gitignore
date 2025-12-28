@@ -1,0 +1,124 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# COMPREHENSIVE FRAMEWORK TEMPLATE for Phoenix
+# Website: https://www.phoenixframework.org/
+# Repository: https://github.com/phoenixframework/phoenix
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: COMPREHENSIVE FRAMEWORK TEMPLATE
+# • PURPOSE: Complete Phoenix framework patterns for Elixir web applications and development artifacts
+# • DESIGN PHILOSOPHY: Self-contained with all Phoenix-specific patterns
+# • COMBINATION GUIDANCE: Use standalone; optionally add IDE/OS templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review patterns before use, test with git check-ignore, customize for your project
+# • OFFICIAL SOURCES: Phoenix documentation and community best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# SECURITY & SENSITIVE DATA PROTECTION (ALWAYS FIRST!)
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# CRITICAL: Protect sensitive data from accidental commits to version control
+
+*.crt
+*.key
+*.keystore
+*.pem
+*.secret
+*.token
+*_keys
+*_secrets
+*_tokens
+.env
+.env.*
+.env.*.local
+.env.demo
+.env.demo.local
+.env.development
+.env.development.local
+.env.local
+.env.production
+.env.production.local
+.env.qa
+.env.qa.local
+.env.staging
+.env.staging.local
+.env.test
+.env.test.local
+/config/*.secret.exs
+id_dsa
+id_rsa
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# BUILD ARTIFACTS & DISTRIBUTION
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+/_build/
+phoenix-*.tar
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEPENDENCY MANAGEMENT & PACKAGE CACHE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+/deps/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEVELOPMENT & RUNTIME ARTIFACTS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.log
+erl_crash.dump
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# FRAMEWORK-SPECIFIC PATTERNS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.ez
+/.fetch
+/dev
+/doc/
+/tmp/
+priv/static/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# TESTING & QUALITY ASSURANCE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.coverage
+/cover/
+coverage/
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE CUSTOMIZATION & BEST PRACTICES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. REVIEW: Examine all patterns before use
+# 2. CUSTOMIZE: Adapt to your project's specific structure
+# 3. TEST: Use `git check-ignore` to verify patterns
+# 4. SECURE: Always protect sensitive data and credentials
+# 5. UPDATE: Review periodically as technology evolves
+
+# RECOMMENDED USAGE PATTERNS:
+# ==============================================================================
+#
+# BASIC USAGE (STANDALONE):
+# -------------------------
+# cp frameworks/phoenix.gitignore .gitignore
+#
+# WITH IDE SUPPORT:
+# ----------------
+# cat frameworks/phoenix.gitignore \
+#     ides/visual-studio-code.gitignore | sort -u > .gitignore
+#
+# CROSS-PLATFORM DEVELOPMENT:
+# ---------------------------
+# cat frameworks/phoenix.gitignore \
+#     os/linux.gitignore \
+#     os/macos.gitignore \
+#     os/windows.gitignore | sort -u > .gitignore
+#
+# IMPORTANT NOTES:
+# ==============================================================================
+# 1. This template is self-contained and includes security patterns
+# 2. No need to add common/security.gitignore separately
+# 3. Test with `git status --ignored` to ensure proper coverage

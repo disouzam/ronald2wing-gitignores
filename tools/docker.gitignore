@@ -1,0 +1,116 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# TOOL-SPECIFIC TEMPLATE for Docker
+# Website: https://www.docker.com/
+# Repository: https://github.com/moby/moby
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: TOOL-SPECIFIC TEMPLATE
+# • PURPOSE: Ignore Docker configuration credentials, runtime artifacts, volume data, and build cache
+# • DESIGN PHILOSOPHY: Modular — combine with common templates
+# • COMBINATION GUIDANCE: Combine with language or framework templates
+# • SECURITY CONSIDERATIONS: No security patterns — combine with common/security.gitignore
+# • BEST PRACTICES: Review patterns before use, test with git check-ignore, customize for your project
+# • OFFICIAL SOURCES: Docker documentation and community best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEPENDENCY MANAGEMENT & PACKAGE CACHE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.docker/
+.dockerbuild/
+.dockercache/
+.dockercontext/
+docker-build/
+docker-cache/
+docker-context/
+docker-temp/
+docker-tmp/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEVELOPMENT & RUNTIME ARTIFACTS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.dockerenv
+docker-daemon.log
+docker.env
+docker.log
+docker.pid
+docker.sock
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# TOOL-SPECIFIC PATTERNS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.dockercfg
+.dockerconfig
+.dockerpass
+docker-auth.json
+docker-config.json
+docker-credentials.json
+docker-data/
+volumes/
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE CUSTOMIZATION & BEST PRACTICES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. REVIEW: Examine all patterns before use
+# 2. CUSTOMIZE: Adapt to your project's specific structure
+# 3. TEST: Use `git check-ignore` to verify patterns
+# 4. SECURE: Always protect sensitive data and credentials
+# 5. UPDATE: Review periodically as technology evolves
+#
+# DOCKER-SPECIFIC NOTES:
+# • DOCKERFILES ARE INTENTIONAL: Dockerfiles and docker-compose files are
+#   NOT ignored — they define your build and must be committed to version control.
+# • SECURITY FIRST: Always combine with common/security.gitignore for
+#   comprehensive protection.
+# • PROJECT-SPECIFIC: Review and customize patterns based on your Docker usage.
+
+# EXAMPLE COMBINATION:
+# ==============================================================================
+#
+# EXAMPLE 1: DOCKER + NODE.JS PROJECT
+# ------------------------------------
+# cat languages/node.gitignore \
+#     common/security.gitignore \
+#     tools/docker.gitignore \
+#     common/cache.gitignore \
+#     common/logs.gitignore | sort -u > .gitignore
+#
+# EXAMPLE 2: DOCKER + PYTHON/DJANGO PROJECT
+# ------------------------------------------
+# cat frameworks/django.gitignore \
+#     tools/docker.gitignore \
+#     common/cache.gitignore | sort -u > .gitignore
+#
+# EXAMPLE 3: DOCKER + REACT PROJECT
+# ----------------------------------
+# cat frameworks/react.gitignore \
+#     tools/docker.gitignore \
+#     common/cache.gitignore | sort -u > .gitignore
+#
+# EXAMPLE 4: ENTERPRISE DOCKER SETUP
+# -----------------------------------
+# cat languages/python.gitignore \
+#     common/security.gitignore \
+#     tools/docker.gitignore \
+#     common/build.gitignore \
+#     common/cache.gitignore \
+#     common/logs.gitignore \
+#     os/linux.gitignore \
+#     os/macos.gitignore \
+#     os/windows.gitignore | sort -u > .gitignore
+#
+# IMPORTANT NOTES:
+# ==============================================================================
+# 1. Framework templates (like django.gitignore, react.gitignore) already
+#    include security patterns, so you don't need to add
+#    common/security.gitignore separately.
+# 2. Language templates (like python.gitignore, node.gitignore) do NOT include
+#    security patterns, so you MUST add common/security.gitignore.
+# 3. Always test your combined .gitignore file with `git status` to ensure
+#    essential files are not accidentally excluded.

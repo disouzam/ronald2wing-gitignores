@@ -1,0 +1,106 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# LANGUAGE-SPECIFIC TEMPLATE for C++
+# Website: https://isocpp.org/
+# Repository: https://github.com/cplusplus
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: LANGUAGE-SPECIFIC TEMPLATE
+# • PURPOSE: C++ compilation patterns for object files, executables, and build directories
+# • DESIGN PHILOSOPHY: Modular — combine with common templates
+# • COMBINATION GUIDANCE: Must combine with common/security.gitignore for sensitive data protection
+# • SECURITY CONSIDERATIONS: No security patterns included — add common/security.gitignore
+# • BEST PRACTICES: Review patterns before use, test with git check-ignore, customize for your project
+# • OFFICIAL SOURCES: C++ documentation and community best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# BUILD ARTIFACTS & DISTRIBUTION
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.gch
+*.pch
+*.qm
+*.qm.bak
+*.qmlc
+*.sln
+*.ui.bak
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+cmake_install.cmake
+CMakeFiles/
+compile_commands.json
+devel/
+doxygen/
+install/
+install_manifest.txt
+Makefile
+Makefile*
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+x64/
+x86/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEPENDENCY MANAGEMENT & PACKAGE CACHE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.catkin_tools/
+.catkin_workspace/
+.rosinstall
+catkin_ws/
+cmake-build-*/
+CMakeCache.txt
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEVELOPMENT & RUNTIME ARTIFACTS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.ros/
+log/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# LANGUAGE-SPECIFIC PATTERNS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.njsproj
+industrial_ci/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# TESTING & QUALITY ASSURANCE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.gcda
+*.gcno
+*.gcov
+*.profraw
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE CUSTOMIZATION & BEST PRACTICES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. REVIEW: Examine all patterns before use
+# 2. CUSTOMIZE: Adapt to your project's specific structure
+# 3. TEST: Use `git check-ignore` to verify patterns
+# 4. SECURE: Always protect sensitive data and credentials
+# 5. UPDATE: Review periodically as technology evolves
+
+# For comprehensive coverage, consider combining with:
+#   - common/security.gitignore (REQUIRED — this template has no security patterns)
+#   - common/cache.gitignore
+#   - common/build.gitignore
+#   - common/logs.gitignore
+#   - ides/*.gitignore
+#   - os/*.gitignore
+#
+# EXAMPLE COMBINATION:
+# cat languages/cpp.gitignore \
+#     common/security.gitignore \
+#     common/cache.gitignore \
+#     common/build.gitignore \
+#     common/logs.gitignore \
+#     ides/visual-studio-code.gitignore | sort -u > .gitignore

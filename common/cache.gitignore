@@ -1,0 +1,141 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# COMMON PATTERNS TEMPLATE for Cache
+# Website: https://gitignores.com/
+# Repository: https://github.com/ronald2wing/.gitignores
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: COMMON PATTERNS TEMPLATE
+# • PURPOSE: Common patterns for Cache across project types
+# • DESIGN PHILOSOPHY: Modular — combine with common templates
+# • COMBINATION GUIDANCE: Combine with language templates for project coverage
+# • SECURITY CONSIDERATIONS: No security patterns — combine with common/security.gitignore
+# • BEST PRACTICES: Review patterns before use, test with git check-ignore, customize for your project
+# • OFFICIAL SOURCES: Cache documentation and community best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# CACHE FILES & TEMPORARY LOCK FILES
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.cache
+*.lck
+*.pid
+*.pid.lock
+*.session
+*.state
+*.temp
+*.tmp
+.cache-*
+.cache.*
+.cache/
+.temp/
+.tmp/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# PACKAGE MANAGER & DEPENDENCY CACHE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.bun/
+.cargo/
+.cargo/git/
+.cargo/registry/
+.node_modules/
+.npm/
+.npminstall/
+.pnp.cjs
+.pnp.js
+.pnp.loader.mjs
+.pnp/
+.pnpm-store/
+.swiftpm/
+.turbo/
+.vite/
+.yarn/
+.yarn/cache
+.yarn/unplugged
+go/pkg/mod/
+maven-repo/
+node_modules/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# BUILD SYSTEM & COMPILER CACHE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.cmake-build-*/
+.cmake/
+.nx/
+.nx/cache/
+.rollup.cache/
+.tsbuildinfo
+.tsbuildinfo.*
+.xcodebuild/
+build-*/
+cmake-build-*/
+target-*/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEVELOPMENT TOOL CACHE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.atom-cache/
+.babel-cache/
+.browser-cache/
+.chrome-cache/
+.emacs.d/auto-save-list/
+.emacs.d/backup/
+.eslintcache
+.firefox-cache/
+.less-cache/
+.next/cache/
+.parcel-cache/
+.postcss-cache/
+.prettiercache
+.safari-cache/
+.sass-cache/
+.stylelintcache
+.stylus-cache/
+.sublime-cache/
+.vim-cache/
+.webassets-cache
+.webpack/
+.yarn-cache/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# SYSTEM TEMPORARY DIRECTORIES
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+/private/var/tmp/
+/tmp/
+/var/cache/
+/var/tmp/
+cache-*
+cache.*
+cache/
+composer-cache/
+gradle-cache/
+ivy-cache/
+out-*/
+pip-cache/
+sbt-cache/
+temp/
+tmp/
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE CUSTOMIZATION & BEST PRACTICES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. REVIEW: Examine all patterns before use
+# 2. CUSTOMIZE: Adapt to your project's specific structure
+# 3. TEST: Use `git check-ignore` to verify patterns
+# 4. SECURE: Always protect sensitive data and credentials
+# 5. UPDATE: Review periodically as technology evolves
+
+# Combine with language or framework templates as needed:
+#
+# EXAMPLE COMBINATION:
+# cat languages/python.gitignore \
+#     common/security.gitignore \
+#     common/cache.gitignore \
+#     common/build.gitignore | sort -u > .gitignore

@@ -1,0 +1,83 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# TOOL-SPECIFIC TEMPLATE for Pipenv
+# Website: https://pipenv.pypa.io/
+# Repository: https://github.com/pypa/pipenv
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: TOOL-SPECIFIC TEMPLATE
+# • PURPOSE: Pipenv Python dependency management patterns for virtual environments, eggs, and testing
+# • DESIGN PHILOSOPHY: Modular — combine with common templates
+# • COMBINATION GUIDANCE: Combine with language or framework templates
+# • SECURITY CONSIDERATIONS: No security patterns — combine with common/security.gitignore
+# • BEST PRACTICES: Review patterns before use, test with git check-ignore, customize for your project
+# • OFFICIAL SOURCES: Pipenv documentation and community best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# BUILD ARTIFACTS & DISTRIBUTION
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.egg
+*.egg-info/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEPENDENCY MANAGEMENT & PACKAGE CACHE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.cache/
+.pipenv/
+.venv/
+__pycache__/
+build/
+dist/
+env.bak/
+ENV/
+venv.bak/
+venv/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEVELOPMENT & RUNTIME ARTIFACTS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.pytest_cache/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# TESTING & QUALITY ASSURANCE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.coverage
+.coverage.*
+.hypothesis/
+coverage.xml
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# TOOL-SPECIFIC PATTERNS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.cover
+*.py[cod]
+.ipynb_checkpoints
+.python-version
+nosetests.xml
+pip-delete-this-directory.txt
+pip-log.txt
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE CUSTOMIZATION & BEST PRACTICES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. REVIEW: Examine all patterns before use
+# 2. CUSTOMIZE: Adapt to your project's specific structure
+# 3. TEST: Use `git check-ignore` to verify patterns
+# 4. SECURE: Always protect sensitive data and credentials
+# 5. UPDATE: Review periodically as technology evolves
+
+# Combine with language or framework templates as needed:
+#
+# EXAMPLE COMBINATION:
+# cat languages/python.gitignore \
+#     common/security.gitignore \
+#     tools/pipenv.gitignore \
+#     common/cache.gitignore | sort -u > .gitignore

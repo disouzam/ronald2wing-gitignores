@@ -1,0 +1,163 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# COMPREHENSIVE FRAMEWORK TEMPLATE for Eleventy
+# Website: https://www.11ty.dev/
+# Repository: https://github.com/11ty/eleventy
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: COMPREHENSIVE FRAMEWORK TEMPLATE
+# • PURPOSE: Complete Eleventy framework patterns for static site generation and build artifacts
+# • DESIGN PHILOSOPHY: Self-contained with all Eleventy-specific patterns
+# • COMBINATION GUIDANCE: Use standalone; optionally add IDE/OS templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review patterns before use, test with git check-ignore, customize for your project
+# • OFFICIAL SOURCES: Eleventy documentation and community best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# SECURITY & SENSITIVE DATA PROTECTION (ALWAYS FIRST!)
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# CRITICAL: Protect sensitive data from accidental commits to version control
+
+*.crt
+*.key
+*.keystore
+*.pem
+*.secret
+*.token
+*_keys
+*_secrets
+*_tokens
+.env
+.env.*
+.env.*.local
+.env.local
+id_dsa
+id_rsa
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# BUILD ARTIFACTS & DISTRIBUTION
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.tar.gz
+*.zip
+_site/
+dist/
+docs/_site/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEPENDENCY MANAGEMENT & PACKAGE CACHE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.cache/
+.eleventy.js.cache
+.yarn-integrity
+.yarn/build-state.yml
+.yarn/cache
+.yarn/install-state.gz
+.yarn/unplugged
+.yarn/versions/
+docs/_build/
+node_modules/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEVELOPMENT & RUNTIME ARTIFACTS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.log
+*.log.*
+*.tmp
+.eslintcache
+.grunt
+.lock-wscript
+.node_repl_history
+.npm-debug.log*
+.pnpm-debug.log*
+.11ty-cache/
+.tern-port
+eleventy.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# FRAMEWORK-SPECIFIC PATTERNS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.temp
+*.ts.js
+*.ts.map
+.backup/
+.bak/
+.dependencies/
+.deploy/
+.deployment/
+.eleventy.config.js.bak
+.eleventy.config.json.bak
+.eleventy.config.ts.bak
+.eleventy.js.bak
+.eleventy.js/filters/__generated__/
+.eleventy.js/plugins/__generated__/
+.eleventy.js/shortcodes/__generated__/
+.eleventy.js/transforms/__generated__/
+.eleventyignore.bak
+_11ty/
+_collections/__generated__/
+_components/__generated__/
+_data/__generated__/
+_includes/__generated__/
+_layouts/__generated__/
+assets/__generated__/
+assets/css/__generated__/
+assets/images/__generated__/
+assets/js/__generated__/
+benchmark/
+benchmarks/
+static/__generated__/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# TESTING & QUALITY ASSURANCE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.coverage
+.coverage.*
+.nyc_output/
+coverage/
+test-results/
+tests/
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE CUSTOMIZATION & BEST PRACTICES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. REVIEW: Examine all patterns before use
+# 2. CUSTOMIZE: Adapt to your project's specific structure
+# 3. TEST: Use `git check-ignore` to verify patterns
+# 4. SECURE: Always protect sensitive data and credentials
+# 5. UPDATE: Review periodically as technology evolves
+
+# RECOMMENDED USAGE PATTERNS:
+# ==============================================================================
+#
+# BASIC USAGE (STANDALONE):
+# -------------------------
+# cp frameworks/eleventy.gitignore .gitignore
+#
+# WITH IDE SUPPORT:
+# ----------------
+# cat frameworks/eleventy.gitignore \
+#     ides/visual-studio-code.gitignore | sort -u > .gitignore
+#
+# CROSS-PLATFORM DEVELOPMENT:
+# ---------------------------
+# cat frameworks/eleventy.gitignore \
+#     os/linux.gitignore \
+#     os/macos.gitignore \
+#     os/windows.gitignore | sort -u > .gitignore
+#
+# IMPORTANT NOTES:
+# ==============================================================================
+# 1. This template is self-contained and includes security patterns
+# 2. No need to add common/security.gitignore separately
+# 3. Test with `git status --ignored` to ensure proper coverage

@@ -1,0 +1,70 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# IDE/EDITOR TEMPLATE for Atom
+# Website: https://atom.io/
+# Repository: https://github.com/ronald2wing/.gitignores
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: IDE/EDITOR TEMPLATE
+# • PURPOSE: Atom editor patterns for configuration, cache, and workspace files
+# • DESIGN PHILOSOPHY: Modular — combine with common templates
+# • COMBINATION GUIDANCE: Combine with language or framework templates
+# • SECURITY CONSIDERATIONS: No security patterns included — combine with common/security.gitignore
+# • BEST PRACTICES: Review patterns before use, test with git check-ignore, customize for your project
+# • OFFICIAL SOURCES: Atom documentation and community best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# IDE-SPECIFIC PATTERNS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.atom-backup~
+*.atom-temp
+*.atom-tmp
+*.log
+.atom.cson
+.atom.cson.backup
+.atom.cson.swo
+.atom.cson.swp
+.atom.cson.tmp
+.atom.cson~
+.atom/
+.atom/.log
+.atom/dev/packages/
+.atom/packages/
+.atom/storage/
+.compile-cache/
+.project.atom
+.project.atom~
+config.cson
+config.cson~
+init.coffee
+init.coffee~
+init.js
+init.js~
+keymap.cson
+keymap.cson~
+snippets.cson
+snippets.cson~
+storage/
+styles.less
+styles.less~
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE CUSTOMIZATION & BEST PRACTICES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. REVIEW: Examine all patterns before use
+# 2. CUSTOMIZE: Adapt to your project's specific structure
+# 3. TEST: Use `git check-ignore` to verify patterns
+# 4. SECURE: Always protect sensitive data and credentials
+# 5. UPDATE: Review periodically as technology evolves
+
+# Combine with language or framework templates as needed:
+#
+# EXAMPLE COMBINATION:
+# cat languages/python.gitignore \
+#     common/security.gitignore \
+#     ides/atom.gitignore \
+#     common/cache.gitignore | sort -u > .gitignore

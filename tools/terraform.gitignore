@@ -1,0 +1,67 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# TOOL-SPECIFIC TEMPLATE for Terraform
+# Website: https://www.terraform.io/
+# Repository: https://github.com/hashicorp/terraform
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: TOOL-SPECIFIC TEMPLATE
+# • PURPOSE: Terraform infrastructure as code patterns for state files, plans, providers, and overrides
+# • DESIGN PHILOSOPHY: Modular — combine with common templates
+# • COMBINATION GUIDANCE: Combine with language or framework templates
+# • SECURITY CONSIDERATIONS: No security patterns — combine with common/security.gitignore
+# • BEST PRACTICES: Review patterns before use, test with git check-ignore, customize for your project
+# • OFFICIAL SOURCES: Terraform documentation and community best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEPENDENCY MANAGEMENT & PACKAGE CACHE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.terraform/environment
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEVELOPMENT & RUNTIME ARTIFACTS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.terragrunt-cache/
+crash.log
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# TOOL-SPECIFIC PATTERNS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.terraform/*
+*.tfplan
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*_override.tf
+*_override.tf.json
+.terraform.lock.hcl
+.terraform/providers/
+.terraformrc
+backend.tf
+override.tf
+override.tf.json
+terraform.rc
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE CUSTOMIZATION & BEST PRACTICES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. REVIEW: Examine all patterns before use
+# 2. CUSTOMIZE: Adapt to your project's specific structure
+# 3. TEST: Use `git check-ignore` to verify patterns
+# 4. SECURE: Always protect sensitive data and credentials
+# 5. UPDATE: Review periodically as technology evolves
+
+# Combine with language or framework templates as needed:
+#
+# EXAMPLE COMBINATION:
+# cat languages/python.gitignore \
+#     common/security.gitignore \
+#     tools/terraform.gitignore \
+#     common/cache.gitignore | sort -u > .gitignore

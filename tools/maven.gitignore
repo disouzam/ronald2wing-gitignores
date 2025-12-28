@@ -1,0 +1,72 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# TOOL-SPECIFIC TEMPLATE for Maven
+# Website: https://maven.apache.org/
+# Repository: https://github.com/apache/maven
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: TOOL-SPECIFIC TEMPLATE
+# • PURPOSE: Apache Maven Java build tool patterns for target directories, POM backups, and artifacts
+# • DESIGN PHILOSOPHY: Modular — combine with common templates
+# • COMBINATION GUIDANCE: Combine with language or framework templates
+# • SECURITY CONSIDERATIONS: No security patterns — combine with common/security.gitignore
+# • BEST PRACTICES: Review patterns before use, test with git check-ignore, customize for your project
+# • OFFICIAL SOURCES: Maven documentation and community best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# BUILD ARTIFACTS & DISTRIBUTION
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.ear
+*.jar
+*.tar.gz
+*.war
+*.zip
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEPENDENCY MANAGEMENT & PACKAGE CACHE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+buildNumber.properties
+target/
+target/classes/
+target/test-classes/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# TOOL-SPECIFIC PATTERNS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.ctxt
+*.nar
+*.rar
+.factorypath
+dependency-reduced-pom.xml
+hs_err_pid*
+pom.xml.next
+pom.xml.releaseBackup
+pom.xml.tag
+pom.xml.versionsBackup
+release.properties
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE CUSTOMIZATION & BEST PRACTICES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. REVIEW: Examine all patterns before use
+# 2. CUSTOMIZE: Adapt to your project's specific structure
+# 3. TEST: Use `git check-ignore` to verify patterns
+# 4. SECURE: Always protect sensitive data and credentials
+# 5. UPDATE: Review periodically as technology evolves
+
+# Combine with language or framework templates as needed:
+#
+# EXAMPLE COMBINATION:
+# cat languages/java.gitignore \
+#     common/security.gitignore \
+#     tools/maven.gitignore \
+#     common/cache.gitignore | sort -u > .gitignore

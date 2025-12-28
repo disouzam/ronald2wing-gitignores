@@ -1,0 +1,160 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# COMMON PATTERNS TEMPLATE for Security
+# Website: https://gitignores.com/
+# Repository: https://github.com/ronald2wing/.gitignores
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: COMMON PATTERNS TEMPLATE
+# • PURPOSE: Common patterns for Security across project types
+# • DESIGN PHILOSOPHY: Modular — combine with common templates
+# • COMBINATION GUIDANCE: Combine with language templates for project coverage
+# • SECURITY CONSIDERATIONS: Comprehensive security patterns for protecting sensitive data in version control
+# • BEST PRACTICES: Review patterns before use, test with git check-ignore, customize for your project
+# • OFFICIAL SOURCES: Security documentation and community best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# ENVIRONMENT VARIABLES & CONFIGURATION FILES
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.env
+.env.*
+.env.*.local
+.env.demo
+.env.demo.local
+.env.development
+.env.development.local
+.env.local
+.env.production
+.env.production.local
+.env.qa
+.env.qa.local
+.env.staging
+.env.staging.local
+.env.test
+.env.test.local
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# CREDENTIALS & SECRETS MANAGEMENT
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.apikey
+*.apisecret
+*.private
+*.secret
+*.secrets
+*.token
+*_keys
+*_secrets
+*_tokens
+.credential*
+.private*
+.secret
+.secret.*
+.secrets
+.secrets.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# CERTIFICATES & CRYPTOGRAPHIC KEYS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.asc
+*.auth
+*.authz
+*.cer
+*.cert
+*.crt
+*.csr
+*.der
+*.gpg
+*.jks
+*.key
+*.keystore
+*.p12
+*.p7b
+*.p7c
+*.pem
+*.pfx
+*.pgp
+*.priv
+*.req
+*.spc
+*.truststore
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# SSH KEYS & AUTHENTICATION FILES
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.ssh/
+authorized_keys
+known_hosts
+ssh_config
+ssh_known_hosts
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# CLOUD PROVIDER CONFIGURATION
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.aws/
+.aws/credentials
+.azure/
+.confidential*
+.config.*
+.gcloud/
+.gcp/
+aws.config
+aws.json
+aws.yaml
+aws.yml
+azure.config
+azure.json
+azure.yaml
+azure.yml
+gcloud.config
+gcloud.json
+gcloud.yaml
+gcloud.yml
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DATABASE & DATA STORAGE FILES
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.accdb
+*.bak
+*.backup
+*.db
+*.db-journal
+*.dockercfg
+*.dockerconfig
+*.dump
+*.frm
+*.ibd
+*.mdb
+*.myd
+*.myi
+*.passwd
+*.pwd
+*.sql.bz2
+*.sql.gz
+*.sql.xz
+*.sqlite
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE CUSTOMIZATION & BEST PRACTICES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. REVIEW: Examine all patterns before use
+# 2. CUSTOMIZE: Adapt to your project's specific structure
+# 3. TEST: Use `git check-ignore` to verify patterns
+# 4. SECURE: Always protect sensitive data and credentials
+# 5. UPDATE: Review periodically as technology evolves
+
+# Combine with language or framework templates as needed:
+#
+# EXAMPLE COMBINATION:
+# cat languages/python.gitignore \
+#     common/security.gitignore \
+#     common/cache.gitignore \
+#     common/build.gitignore | sort -u > .gitignore

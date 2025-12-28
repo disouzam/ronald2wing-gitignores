@@ -1,0 +1,87 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# REPOSITORY DEVELOPMENT TEMPLATE for .gitignores Template Collection
+# Website: https://gitignores.com/
+# Repository: https://github.com/ronald2wing/.gitignores
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: REPOSITORY DEVELOPMENT TEMPLATE
+# • PURPOSE: Ignore development artifacts for this template collection repository
+# • DESIGN PHILOSOPHY: Modular — combine with common templates
+# • COMBINATION GUIDANCE: Internal use only; not for distribution
+# • SECURITY CONSIDERATIONS: No credentials or secrets in template text files
+# • BEST PRACTICES: Mirror patterns from os/ and ides/ templates as appropriate
+# • OFFICIAL SOURCES: gitignores.com template standards
+# • NOTE: This file is NOT a user template — see subdirectories for those
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# OPERATING SYSTEM FILES
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Cross-platform OS-generated metadata and system files
+
+$RECYCLE.BIN/
+._*
+.apdisk
+.AppleDB
+.AppleDesktop
+.AppleDouble
+.com.apple.timemachine.donotpresent
+core.[0-9]*
+[Dd]esktop.ini
+.directory
+.DocumentRevisions-V100
+.dolphinview
+.DS_Store
+.DS_Store?
+ehthumbs.db
+ehthumbs_vista.db
+.fseventsd
+.fuse_hidden*
+.Icon
+.LSOverride
+Network\ Trash\ Folder/
+.Spotlight-V100
+.TemporaryItems
+Temporary\ Items/
+.Trash-*
+.Trashes
+Thumbs.db
+Thumbs.db:encryptable
+.VolumeIcon.icns
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# EDITOR & IDE ARTIFACTS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Editor backup, swap, session, workspace, and configuration files
+
+*~
+*.code-workspace
+*.iml
+*.iws
+*.kate-swp
+*.sublime-*
+*.un~
+*.vsix
+.#*
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+.history/
+.idea/
+.idea_modules/
+.netrwhist
+.save-*
+.vscode/*
+\#*
+Session.vim
+sftp-config.json
+sftp-settings.json
+tags
+tramp
+!.vscode/*.code-snippets
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json

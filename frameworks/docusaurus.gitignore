@@ -1,0 +1,170 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# COMPREHENSIVE FRAMEWORK TEMPLATE for Docusaurus
+# Website: https://docusaurus.io/
+# Repository: https://github.com/facebook/docusaurus
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: COMPREHENSIVE FRAMEWORK TEMPLATE
+# • PURPOSE: Complete Docusaurus framework patterns for documentation sites and build artifacts
+# • DESIGN PHILOSOPHY: Self-contained with all Docusaurus-specific patterns
+# • COMBINATION GUIDANCE: Use standalone; optionally add IDE/OS templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review patterns before use, test with git check-ignore, customize for your project
+# • OFFICIAL SOURCES: Docusaurus documentation and community best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# SECURITY & SENSITIVE DATA PROTECTION (ALWAYS FIRST!)
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# CRITICAL: Protect sensitive data from accidental commits to version control
+
+*.crt
+*.key
+*.keystore
+*.pem
+*.secret
+*.token
+*_keys
+*_secrets
+*_tokens
+.env
+.env.*
+.env.*.local
+.env.local
+id_dsa
+id_rsa
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# BUILD ARTIFACTS & DISTRIBUTION
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.tar.gz
+*.zip
+build/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEPENDENCY MANAGEMENT & PACKAGE CACHE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.cache/
+.yarn-integrity
+.yarn/build-state.yml
+.yarn/cache
+.yarn/install-state.gz
+.yarn/unplugged
+.yarn/versions/
+dist/
+node_modules/
+src/.cache/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEVELOPMENT & RUNTIME ARTIFACTS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.log
+*.log.*
+*.tmp
+.eslintcache
+.grunt
+.lock-wscript
+.node_repl_history
+.npm-debug.log*
+.pnpm-debug.log*
+.tern-port
+docusaurus.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# FRAMEWORK-SPECIFIC PATTERNS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.css.map
+*.less.map
+*.parcel.js
+*.parcel.js.map
+*.postcss.map
+*.rollup.js
+*.rollup.js.map
+*.sass.map
+*.scss.map
+*.styl.map
+*.temp
+*.ts.js
+*.ts.map
+*.vite.js
+*.vite.js.map
+*.webpack.js
+*.webpack.js.map
+.backup/
+.bak/
+.deploy/
+.deployment/
+.docusaurus/
+blog/__generated__/
+docs/__generated__/
+docusaurus.config.js.bak
+docusaurus.config.json.bak
+docusaurus.config.ts.bak
+i18n/__generated__/
+sidebars.js.bak
+sidebars.json.bak
+sidebars.ts.bak
+src/.docusaurus/
+src/components/__generated__/
+src/pages/__generated__/
+src/theme/__generated__/
+static/__generated__/
+static/assets/__generated__/
+static/css/__generated__/
+static/img/__generated__/
+static/js/__generated__/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# TESTING & QUALITY ASSURANCE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.coverage
+.coverage.*
+.nyc_output/
+coverage/
+test-results/
+tests/
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE CUSTOMIZATION & BEST PRACTICES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. REVIEW: Examine all patterns before use
+# 2. CUSTOMIZE: Adapt to your project's specific structure
+# 3. TEST: Use `git check-ignore` to verify patterns
+# 4. SECURE: Always protect sensitive data and credentials
+# 5. UPDATE: Review periodically as technology evolves
+
+# RECOMMENDED USAGE PATTERNS:
+# ==============================================================================
+#
+# BASIC USAGE (STANDALONE):
+# -------------------------
+# cp frameworks/docusaurus.gitignore .gitignore
+#
+# WITH IDE SUPPORT:
+# ----------------
+# cat frameworks/docusaurus.gitignore \
+#     ides/visual-studio-code.gitignore | sort -u > .gitignore
+#
+# CROSS-PLATFORM DEVELOPMENT:
+# ---------------------------
+# cat frameworks/docusaurus.gitignore \
+#     os/linux.gitignore \
+#     os/macos.gitignore \
+#     os/windows.gitignore | sort -u > .gitignore
+#
+# IMPORTANT NOTES:
+# ==============================================================================
+# 1. This template is self-contained and includes security patterns
+# 2. No need to add common/security.gitignore separately
+# 3. Test with `git status --ignored` to ensure proper coverage

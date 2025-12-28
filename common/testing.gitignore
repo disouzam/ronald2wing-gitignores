@@ -1,0 +1,137 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# COMMON PATTERNS TEMPLATE for Testing
+# Website: https://gitignores.com/
+# Repository: https://github.com/ronald2wing/.gitignores
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: COMMON PATTERNS TEMPLATE
+# • PURPOSE: Common patterns for Testing across project types
+# • DESIGN PHILOSOPHY: Modular — combine with common templates
+# • COMBINATION GUIDANCE: Combine with language templates for project coverage
+# • SECURITY CONSIDERATIONS: No security patterns — combine with common/security.gitignore
+# • BEST PRACTICES: Review patterns before use, test with git check-ignore, customize for your project
+# • OFFICIAL SOURCES: Testing documentation and community best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# TEST ARTIFACTS & REPORTS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.exec
+*.py,cover
+*.snap
+*.trx
+*.VisualState.xml
+.codeclimate.yml
+.codeclimate/
+.doctest/
+.grype/
+.nox/
+.nunit/
+.perf/
+.pitest/
+.pytest_cache/
+.scannerwork/
+.snapshots/
+.syft/
+.tox/
+.trivy/
+.vstest/
+allure-results/
+benchmark-results/
+benchmark/
+benchmark_results/
+benchmarks/
+cypress/downloads/
+cypress/screenshots/
+cypress/videos/
+doctest-output/
+e2e-test/
+e2e-tests/
+e2e/
+e2e_test/
+e2e_tests/
+failsafe-reports/
+integration-test/
+integration-tests/
+integration/
+integration_test/
+integration_tests/
+junit.xml
+load-test-results/
+load_test_results/
+mutation-testing-reports/
+mutation-testing/
+performance-reports/
+performance_results/
+pitest-reports/
+playwright-report/
+playwright/.cache/
+security-scans/
+snapshots/
+sonar-project.properties
+stress-test-results/
+stress_test_results/
+surefire-reports/
+target/failsafe-reports/
+target/surefire-reports/
+test-output.xml
+test-output/
+test-report.xml
+test-reports/
+test-results.xml
+test-results/
+testng-results.xml
+TestResult.xml
+__diff_output__/
+__image_snapshots__/
+__screenshots__/
+__snapshots__/
+tests/Browser/console/
+tests/Browser/screenshots/
+tests/Browser/source/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# COVERAGE REPORTS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.cover
+*.coverage
+*.coveragexml
+*.lcov
+.coverage
+.coverage.*
+.coverage.xml
+.coverage_html/
+.nyc_output/
+.sonar/
+.sonarlint/
+cover/
+coverage.cobertura.xml
+coverage.opencover.xml
+coverage.xml
+coverage/
+htmlcov/
+jacoco.exec
+jacoco.xml
+lcov.info
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE CUSTOMIZATION & BEST PRACTICES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. REVIEW: Examine all patterns before use
+# 2. CUSTOMIZE: Adapt to your project's specific structure
+# 3. TEST: Use `git check-ignore` to verify patterns
+# 4. SECURE: Always protect sensitive data and credentials
+# 5. UPDATE: Review periodically as technology evolves
+
+# Combine with language or framework templates as needed:
+#
+# EXAMPLE COMBINATION:
+# cat languages/python.gitignore \
+#     common/security.gitignore \
+#     common/testing.gitignore \
+#     common/cache.gitignore | sort -u > .gitignore

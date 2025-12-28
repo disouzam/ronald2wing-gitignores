@@ -1,0 +1,139 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# COMPREHENSIVE FRAMEWORK TEMPLATE for Gatsby
+# Website: https://www.gatsbyjs.com/
+# Repository: https://github.com/gatsbyjs/gatsby
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: COMPREHENSIVE FRAMEWORK TEMPLATE
+# • PURPOSE: Complete Gatsby framework patterns for React-based static sites and build artifacts
+# • DESIGN PHILOSOPHY: Self-contained with all Gatsby-specific patterns
+# • COMBINATION GUIDANCE: Use standalone; optionally add IDE/OS templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review patterns before use, test with git check-ignore, customize for your project
+# • OFFICIAL SOURCES: Gatsby documentation and community best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# SECURITY & SENSITIVE DATA PROTECTION (ALWAYS FIRST!)
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# CRITICAL: Protect sensitive data from accidental commits to version control
+
+*.crt
+*.key
+*.keystore
+*.pem
+*.secret
+*.token
+*_keys
+*_secrets
+*_tokens
+.env
+.env.*
+.env.*.local
+.env.local
+id_dsa
+id_rsa
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# BUILD ARTIFACTS & DISTRIBUTION
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.tar.gz
+*.zip
+public/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEPENDENCY MANAGEMENT & PACKAGE CACHE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.tsbuildinfo
+.cache/
+.yarn-integrity
+.yarn/build-state.yml
+.yarn/cache
+.yarn/install-state.gz
+.yarn/unplugged
+.yarn/versions/
+build/Release
+dist/
+node_modules/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEVELOPMENT & RUNTIME ARTIFACTS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.log
+*.log.*
+.eslintcache
+.grunt
+.lock-wscript
+.node_repl_history
+.npm-debug.log*
+.parcel-cache/
+.pnpm-debug.log*
+.rpt2_cache/
+.tern-port
+lerna-debug.log*
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# FRAMEWORK-SPECIFIC PATTERNS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.lcov
+*.pid
+*.pid.lock
+*.seed
+*.tgz
+.dynamodb/
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# TESTING & QUALITY ASSURANCE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.coverage
+.coverage.*
+.nyc_output/
+coverage/
+test-results/
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE CUSTOMIZATION & BEST PRACTICES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. REVIEW: Examine all patterns before use
+# 2. CUSTOMIZE: Adapt to your project's specific structure
+# 3. TEST: Use `git check-ignore` to verify patterns
+# 4. SECURE: Always protect sensitive data and credentials
+# 5. UPDATE: Review periodically as technology evolves
+
+# RECOMMENDED USAGE PATTERNS:
+# ==============================================================================
+#
+# BASIC USAGE (STANDALONE):
+# -------------------------
+# cp frameworks/gatsby.gitignore .gitignore
+#
+# WITH IDE SUPPORT:
+# ----------------
+# cat frameworks/gatsby.gitignore \
+#     ides/visual-studio-code.gitignore | sort -u > .gitignore
+#
+# CROSS-PLATFORM DEVELOPMENT:
+# ---------------------------
+# cat frameworks/gatsby.gitignore \
+#     os/linux.gitignore \
+#     os/macos.gitignore \
+#     os/windows.gitignore | sort -u > .gitignore
+#
+# IMPORTANT NOTES:
+# ==============================================================================
+# 1. This template is self-contained and includes security patterns
+# 2. No need to add common/security.gitignore separately
+# 3. Test with `git status --ignored` to ensure proper coverage

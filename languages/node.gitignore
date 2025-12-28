@@ -1,0 +1,102 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# LANGUAGE-SPECIFIC TEMPLATE for Node.js
+# Website: https://nodejs.org/
+# Repository: https://github.com/nodejs/node
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: LANGUAGE-SPECIFIC TEMPLATE
+# • PURPOSE: Node.js-specific development patterns for node_modules, package cache, and runtime logs
+# • DESIGN PHILOSOPHY: Modular — combine with common templates
+# • COMBINATION GUIDANCE: Must combine with common/security.gitignore for sensitive data protection
+# • SECURITY CONSIDERATIONS: No security patterns included — add common/security.gitignore
+# • BEST PRACTICES: Review patterns before use, test with git check-ignore, customize for your project
+# • OFFICIAL SOURCES: Node.js documentation and community best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# BUILD ARTIFACTS & DISTRIBUTION
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+build/Release/
+dist/
+lib-cov/
+out/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEPENDENCY MANAGEMENT & PACKAGE CACHE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.bower-cache/
+.npm/
+.pnp.*
+.pnpm-store/
+.yarn-integrity
+.yarn/
+.yarn/cache/
+.yarn/install-state.gz
+.yarn/unplugged/
+.yarn/versions/
+bower_components/
+jspm_packages/
+node_modules/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEVELOPMENT & RUNTIME ARTIFACTS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.pid
+*.pid.lock
+.lock-wscript
+.npm-debug.log*
+.pnpm-debug.log*
+.tern-port
+.turbo/
+.vite/
+npm-debug.log*
+pids/
+yarn-debug.log*
+yarn-error.log*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# LANGUAGE-SPECIFIC PATTERNS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.node
+.node_repl_history
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# TESTING & QUALITY ASSURANCE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.coverage
+.coverage.*
+.nyc_output/
+coverage/
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE CUSTOMIZATION & BEST PRACTICES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. REVIEW: Examine all patterns before use
+# 2. CUSTOMIZE: Adapt to your project's specific structure
+# 3. TEST: Use `git check-ignore` to verify patterns
+# 4. SECURE: Always protect sensitive data and credentials
+# 5. UPDATE: Review periodically as technology evolves
+
+# For comprehensive coverage, consider combining with:
+#   - common/security.gitignore (REQUIRED — this template has no security patterns)
+#   - common/cache.gitignore
+#   - common/build.gitignore
+#   - common/logs.gitignore
+#   - ides/*.gitignore
+#   - os/*.gitignore
+#
+# EXAMPLE COMBINATION:
+# cat languages/node.gitignore \
+#     common/security.gitignore \
+#     common/cache.gitignore \
+#     common/build.gitignore \
+#     common/logs.gitignore \
+#     ides/visual-studio-code.gitignore | sort -u > .gitignore

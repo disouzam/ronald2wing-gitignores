@@ -1,0 +1,182 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# COMMON PATTERNS TEMPLATE for Build
+# Website: https://gitignores.com/
+# Repository: https://github.com/ronald2wing/.gitignores
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: COMMON PATTERNS TEMPLATE
+# • PURPOSE: Common patterns for Build across project types
+# • DESIGN PHILOSOPHY: Modular — combine with common templates
+# • COMBINATION GUIDANCE: Combine with language templates for project coverage
+# • SECURITY CONSIDERATIONS: No security patterns — combine with common/security.gitignore
+# • BEST PRACTICES: Review patterns before use, test with git check-ignore, customize for your project
+# • OFFICIAL SOURCES: Build documentation and community best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# BUILD ARTIFACTS & DISTRIBUTION
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.a
+*.apk
+*.app
+*.appx
+*.dll
+*.dylib
+*.ear
+*.egg
+*.exe
+*.gz
+*.jar
+*.lib
+*.so
+*.tar.bz2
+*.tar.gz
+*.tar.xz
+*.tsbuildinfo
+*.war
+*.whl
+*.zip
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# BUILD SYSTEM OUTPUTS & INTERMEDIATE FILES
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*$py.class
+*.7z
+*.bz2
+*.class
+*.deb
+*.dmg
+*.ilk
+*.ipa
+*.ko
+*.msi
+*.nupkg
+*.o
+*.obj
+*.pdb
+*.pkg
+*.py[cod]
+*.rar
+*.rpm
+*.sage.py
+*.xz
+.bazel-bin/
+.bazel-out/
+.bazel-testlogs/
+.bazel/
+.buck-out/
+.dist-newstyle/
+.docusaurus/
+.elm-stuff/
+.fusebox/
+.gatsby/
+.next/
+.nuxt/
+.nx/
+.out-*/
+.out.*/
+.out/
+.out_*/
+.pkg/
+.pnpm-store/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.serverless/
+.storybook-out/
+.turbo/
+.yarn/
+.yarn/cache
+.yarn/install-state.gz
+.yarn/unplugged
+develop-eggs/
+downloads/
+eggs/
+lib64/
+_out-*/
+_out.*/
+_out/
+_out_*/
+_site/
+out-*/
+out.*/
+out/
+out_*/
+parts/
+share/python-wheels/
+storybook-static/
+wheels/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEPENDENCY MANAGEMENT & PACKAGE CACHE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.build-*/
+.build.*/
+.build/
+.build_*/
+.dist-*/
+.dist.*/
+.dist/
+.dist_*/
+.target-*/
+.target.*/
+.target/
+.target_*/
+.yarn/build-state.yml
+_build-*/
+_build.*/
+_build/
+_build_*/
+_dist-*/
+_dist.*/
+_dist/
+_dist_*/
+_target-*/
+_target.*/
+_target/
+_target_*/
+build-*/
+build.*/
+build/
+build_*/
+dist-*/
+dist.*/
+dist/
+dist_*/
+node_modules/.cache/
+node_modules/.pnpm-store/
+sdist/
+target-*/
+target.*/
+target/
+target_*/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEVELOPMENT & RUNTIME ARTIFACTS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.parcel-cache/
+.rpt2_cache/
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE CUSTOMIZATION & BEST PRACTICES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. REVIEW: Examine all patterns before use
+# 2. CUSTOMIZE: Adapt to your project's specific structure
+# 3. TEST: Use `git check-ignore` to verify patterns
+# 4. SECURE: Always protect sensitive data and credentials
+# 5. UPDATE: Review periodically as technology evolves
+
+# Combine with language or framework templates as needed:
+#
+# EXAMPLE COMBINATION:
+# cat languages/python.gitignore \
+#     common/security.gitignore \
+#     common/build.gitignore \
+#     common/cache.gitignore | sort -u > .gitignore
